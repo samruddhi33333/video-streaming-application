@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(135deg, #d17f96, #9b59b6, #8c2d63); 
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff; 
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
+  background-color: rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: #fff; 
+}
+
+.upload-section,
+.video-section {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upload-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.upload-container input[type="file"],
+.upload-container input[type="text"],
+.upload-container select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #7a4d73; 
+  border-radius: 5px;
+  background-color: #5f2a58; 
+  color: #fff; 
+}
+
+.upload-container button {
+  background-color: #9b59b6; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upload-container button:hover {
+  background-color: #8e44ad; 
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.video-card {
+  background: #5f2a58; 
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #fff; 
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #d1b0b8;
+}
+
+
